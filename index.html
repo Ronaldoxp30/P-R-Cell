@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/1e125267-c56b-4bd3-8dd1-cc3e1916711f.jpg" type="image/x-icon">
+  <title>Serviços de Manutenção - P&Rcell</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s ease;
+    }
+
+    h1 {
+      color: #333;
+      margin-top: 20px;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover {
+      color: #4CAF50;
+    }
+
+    #gallery {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px;
+    }
+
+    #photoGallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .photo {
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .photo h3 {
+      margin: 10px 0;
+      color: #4CAF50;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .photo h3:hover {
+      color: #333;
+    }
+
+    /* Ícone do WhatsApp */
+    #whatsappIcon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    #whatsappIcon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    #whatsappIcon img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 200%;
+      height: 100%;
+      background-color: #4CAF50;
+      transform: translateX(-50%) translateY(-50%);
+      transition: transform 0.5s ease;
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    footer:hover::before {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    footer h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 16px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer p:hover {
+      color: #4CAF50;
+      transition: color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>P&Rcell</h1>
+
+  <!-- Galeria de Fotos -->
+  <div id="gallery">
+    <div id="photoGallery">
+      <!-- Troca de Tela -->
+      <div class="photo">
+        <img src="img/37328c32-fd3e-4e62-8ceb-daa6eec2524b.jpg" alt="Troca de Tela">
+        <h3>Troca de Tela</h3>
+      </div>
+
+      <!-- Troca de Bateria -->
+      <div class="photo">
+        <img src="img/battery_03.webp" alt="Troca de Bateria">
+        <h3>Troca de Bateria</h3>
+      </div>
+
+      <!-- Conectores -->
+      <div class="photo">
+        <img src="img/6c531648-e679-41c6-b799-225ba70e4533.jpg" alt="Conectores">
+        <h3>Conectores</h3>
+      </div>
+
+      <!-- Câmeras -->
+      <div class="photo">
+        <img src="img/edcd6949-ecf0-4f52-8141-95c35a141309.jpg" alt="Câmeras">
+        <h3>Câmeras</h3>
+      </div>
+
+      <!-- Aplicação de Película -->
+      <div class="photo">
+        <img src="img/ac56e806-2359-4142-8503-78c8e2af1c1e.jpg" alt="Aplicação de Película">
+        <h3>Aplicação de Película</h3>
+      </div>
+
+      <!-- Desoxidação -->
+      <div class="photo">
+        <img src="img/OIP.jpg" alt="Desoxidação">
+        <h3>Desoxidação</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ícone do WhatsApp -->
+  <a href="https://wa.me/73988800885" id="whatsappIcon" target="_blank" title="Fale conosco no WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Sobre Nós</h2>
+    <p>Na P&Rcell, temos como missão proporcionar serviços de assistência técnica de alta qualidade, especializada em troca de telas, baterias, conectores, câmeras, aplicação de película e desoxidação. Nossa equipe é dedicada e pronta para oferecer soluções eficientes, com um atendimento que preza pela honestidade e satisfação do cliente.</p>
+  </footer>
+
+</body>
+</html>
